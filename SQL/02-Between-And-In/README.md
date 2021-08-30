@@ -1,5 +1,4 @@
 # 02-Between-And-In
-
 >1- Select the data in all columns in the movie table provided that the replacement cost value is greater than 12.99, equal and less than 16.99.
 >``` SQL
 > SELECT * FROM film
