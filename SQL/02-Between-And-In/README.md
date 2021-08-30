@@ -10,7 +10,7 @@
 >2- Select the data in the first_name and last_name columns in the Actor table, provided that the first_name is 'Penelope' or 'Nick' or 'Ed'.
 >``` SQL
 > SELECT first_name, last_name FROM actor
-> WHERE first_name IN('Penelope', 'Nick', 'Ed'); -- WHERE first_name = 'Penelope' OR first_name = 'Nick' OR first_name = 'Ed' 
+> WHERE first_name IN('Penelope', 'Nick', 'Ed'); -- WHERE first_name = 'Penelope' OR first_name = 'Nick' OR first_name = 'Ed';
 >```
 >
 > ![image](https://user-images.githubusercontent.com/57245919/131323114-79d1d960-2018-43da-8f82-85f81b2ffeab.png)
@@ -19,7 +19,7 @@
 >3- Select the data in all columns in the movie table with rental_rate 0.99, 2.99, 4.99 AND replacement_cost 12.99, 15.99, 28.99.
 >``` SQL
 > SELECT * FROM film
-> WHERE rental_rate IN(0.99, 2.99, 4.99) AND replacement_cost IN(12.99, 15.99, 28.99)
+> WHERE rental_rate IN(0.99, 2.99, 4.99) AND replacement_cost IN(12.99, 15.99, 28.99);
 >```
 > ![image](https://user-images.githubusercontent.com/57245919/131323963-a18aa770-c403-4fdc-82c1-1fd5148f4a2e.png)
 >
