@@ -1,3 +1,7 @@
+/**
+ *  @author Fatih ARI - 30.08.2021
+ */
+ 
 -- Option 1:
 SELECT title, description FROM film;
 
