@@ -16,7 +16,7 @@
 >	name VARCHAR(50) NOT NULL,
 >	birthday DATE,
 >	email VARCHAR(100) NOT NULL
->);
+>--company_id INTEGER REFERENCES company(id) -- Using ***FOREIGN KEY*** 
 >```
 > ![image](https://user-images.githubusercontent.com/57245919/131541978-ef6bd440-475f-4c57-b84e-69e2a731af90.png)
 >
