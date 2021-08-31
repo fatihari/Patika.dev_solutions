@@ -8,7 +8,10 @@
 >	column2_name data_type constraint
 >	column3_name data_type constraint
 >	...
->);*/
+>);
+>
+>--For delete a table: 
+>  DROP TABLE IF EXISTS test;*/
 >
 >CREATE TABLE employee
 >(
