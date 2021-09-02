@@ -5,7 +5,7 @@
 >1- Select all the data for the **first_name** columns in the **actor** and **customer** tables.
 >``` SQL
 >
-> -- UNION, INTERSECT ve EXCEPT'te sütun sayıları ve sütunların veri tipleri aynı olmalı.
+
 > (
 > SELECT first_name FROM actor
 > )
@@ -19,7 +19,6 @@
 >2- Select the intersecting data for the **first_name** columns in the **actor** and **customer** tables.
 >``` SQL
 >
-> -- UNION, INTERSECT ve EXCEPT'te sütun sayıları ve sütunların veri tipleri aynı olmalı.
 > (
 > SELECT first_name FROM actor
 > )
@@ -33,7 +32,6 @@
 >3- For the **first_name** columns in the **actor** and **customer** tables, select the data in the first table but not in the second table.
 > ``` SQL
 >
-> -- UNION, INTERSECT ve EXCEPT'te sütun sayıları ve sütunların veri tipleri aynı olmalı.
 > (
 > SELECT first_name FROM actor
 > )
@@ -47,7 +45,6 @@
 >4- Let's do the first query for the repeating data.
 > ``` SQL
 >
-> -- UNION, INTERSECT ve EXCEPT'te sütun sayıları ve sütunların veri tipleri aynı olmalı.
 > (
 > SELECT first_name FROM actor
 > )
