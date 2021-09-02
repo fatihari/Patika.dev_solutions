@@ -1,5 +1,6 @@
 # 10-Left-Right-FullJoin
 
+
 ![img_leftjoin](https://user-images.githubusercontent.com/57245919/131883545-cea1afb7-61f5-4b6a-9414-8a324247df89.gif) 
 ![img_rightjoin](https://user-images.githubusercontent.com/57245919/131883548-4fd4bcde-b435-46bb-9b59-53404d2e0ee3.gif) 
 ![img_fulljoin](https://user-images.githubusercontent.com/57245919/131883549-469d3816-8912-4f27-949b-a40472c9cf91.gif)
