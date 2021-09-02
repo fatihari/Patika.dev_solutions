@@ -2,7 +2,7 @@
 
 >1-Please write the INNER JOIN query where we can see the names of ***city*** and ***country*** in **city** table and **country** table together.
 >``` SQL
-> SELECT city, country FROM country INNER JOIN city
+> SELECT city, country FROM country INNER JOIN city -- = FROM city  INNER JOIN country (symmetric in Inner (Join)) 
 > ON country.country_id = city.country_id;
 >```
 > ![image](https://user-images.githubusercontent.com/57245919/131696044-83d5a428-7835-4589-b66a-934555adf31d.png)
