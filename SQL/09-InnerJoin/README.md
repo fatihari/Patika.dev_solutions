@@ -1,5 +1,8 @@
 # 09-InnerJoin
 
+![img_innerjoin](https://user-images.githubusercontent.com/57245919/131872724-add93d20-81c4-4c5f-a8c6-769117c56af1.gif)
+
+
 >1-Please write the INNER JOIN query where we can see the names of ***city*** and ***country*** in **city** table and **country** table together.
 >``` SQL
 > SELECT city, country FROM country INNER JOIN city -- = FROM city  INNER JOIN country (symmetric in Inner (Join)) 
