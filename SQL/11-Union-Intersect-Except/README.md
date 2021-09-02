@@ -5,7 +5,6 @@
 >1- Select all the data for the **first_name** columns in the **actor** and **customer** tables.
 >``` SQL
 >
-
 > (
 > SELECT first_name FROM actor
 > )
