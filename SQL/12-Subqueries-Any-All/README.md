@@ -17,32 +17,33 @@
 > WHERE rental_rate = ANY -- it can be ALL
 > (
 > SELECT MAX(rental_rate) from film
-> )
+> );
 >```
 > ![image](https://user-images.githubusercontent.com/57245919/131914715-f80fff1f-8824-46f0-a6de-0ff93356c359.png)
 >
->3- In the movie table, select the movies with the lowest rental_rate and the lowest replacement_cost values.
+>3- In **film** table, select the movies with the lowest **rental_rate** and the **lowest replacement_cost** values.
 > ``` SQL
 >
-> (
-> SELECT first_name FROM actor
-> )
-> EXCEPT
-> (
-> SELECT first_name FROM customer
-> );
+> SELECT title, replacement_cost, rental_rate  FROM film
+> WHERE replacement_cost = ANY -- it can be empty or ALL
+>						 (
+>							SELECT MIN(replacement_cost) FROM film
+>						 )
+> AND rental_rate = ANY -- it can be empty or ALL
+>				  (
+>				  	 SELECT MIN(rental_rate) FROM film
+>				  );
 >```
-> ![image](https://user-images.githubusercontent.com/57245919/131896710-4737e2d9-e884-4578-af7d-0198b0748154.png)
+> ![image](https://user-images.githubusercontent.com/57245919/131963889-d3f98b4e-efb4-428a-ae3e-a57f496e2dec.png)
 >
->4- Let's do the first query for the repeating data.
+>4- In the **payment** table, select the customers who make the most purchases.
 > ``` SQL
->
+> SELECT first_name, last_name, customer.customer_id, amount FROM customer INNER JOIN payment
+> ON customer.customer_id = payment.customer_id
+> WHERE amount = ALL
 > (
-> SELECT first_name FROM actor
-> )
-> UNION ALL
-> (
-> SELECT first_name FROM customer
+>	 SELECT MAX(amount) FROM payment
 > );
+>
 >```
-> ![image](https://user-images.githubusercontent.com/57245919/131897249-4d7e9a8a-d184-4a85-a063-3eb5b2cd83cd.png)
+> ![image](https://user-images.githubusercontent.com/57245919/131966355-8c74c63d-08db-4a34-8692-44591e29b810.png)
