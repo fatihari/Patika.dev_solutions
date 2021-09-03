@@ -25,14 +25,14 @@
 > ``` SQL
 >
 > SELECT title, replacement_cost, rental_rate  FROM film
-> WHERE replacement_cost = ANY -- it can be empty or ALL
->						 (
->							SELECT MIN(replacement_cost) FROM film
->						 )
+> WHERE replacement_cost = ANY -- it can be empty or ALL			
+>(
+>     SELECT MIN(replacement_cost) FROM film
+>)
 > AND rental_rate = ANY -- it can be empty or ALL
->				  (
->				  	 SELECT MIN(rental_rate) FROM film
->				  );
+>(
+>	  SELECT MIN(rental_rate) FROM film
+>);
 >```
 > ![image](https://user-images.githubusercontent.com/57245919/131963889-d3f98b4e-efb4-428a-ae3e-a57f496e2dec.png)
 >
