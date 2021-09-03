@@ -47,3 +47,17 @@
 >
 >```
 > ![image](https://user-images.githubusercontent.com/57245919/131966355-8c74c63d-08db-4a34-8692-44591e29b810.png)
+>
+>5- Let's write the **names of the movies** with the longest movie length, their **length**, **actor names** and **actor surnames**.
+> ``` SQL
+> SELECT title, length, first_name, last_name FROM film INNER JOIN film_actor
+> ON film.film_id = film_actor.film_id
+> INNER JOIN actor
+> ON actor.actor_id = film_actor.actor_id
+> WHERE film.length = ANY
+> (
+>	 SELECT MAX(length) FROM film
+> );
+>
+>```
+> ![image](https://user-images.githubusercontent.com/57245919/131971294-3a105d46-990c-4681-abd5-d9e5e5629d33.png)
