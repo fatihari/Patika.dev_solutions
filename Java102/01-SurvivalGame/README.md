@@ -14,7 +14,7 @@ The OOP principles used:
 
 ![image](https://user-images.githubusercontent.com/57245919/132229305-9aca25b2-5282-42ba-bdc4-24717bff9cd1.png)
 
-![image](https://user-images.githubusercontent.com/57245919/132549706-6c9d58be-6947-416c-be12-0cad01037ff7.png)
+![image](https://user-images.githubusercontent.com/57245919/132573463-bfb0aef1-dbfe-42a1-9093-e671a3ba4cc6.png)
 
 ### Screenshots from the game: 
 
